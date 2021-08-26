@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ResourceDistributionGroups>
+    <DistributionGroup>
+      <Id>
+        <TypeId>MyObjectBuilder_ResourceDistributionGroup</TypeId>
+        <SubtypeId>Charging</SubtypeId>
+      </Id>
+      <IsSource>false</IsSource>
+      <Priority>80</Priority>
+      <IsAdaptible>true</IsAdaptible>
+    </DistributionGroup>
+
+    <DistributionGroup>
+      <Id>
+        <TypeId>MyObjectBuilder_ResourceDistributionGroup</TypeId>
+        <SubtypeId>Gyro</SubtypeId>
+      </Id>
+      <IsSource>false</IsSource>
+      <Priority>60</Priority>
+      <IsAdaptible>false</IsAdaptible>
+    </DistributionGroup>
+
+    <DistributionGroup>
+      <Id>
+        <TypeId>MyObjectBuilder_ResourceDistributionGroup</TypeId>
+        <SubtypeId>Thrust</SubtypeId>
+      </Id>
+      <IsSource>false</IsSource>
+      <Priority>70</Priority>
+      <IsAdaptible>true</IsAdaptible>
+    </DistributionGroup>
+  </ResourceDistributionGroups>
+
+</Definitions>

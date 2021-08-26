@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeShipSmallShieldGeneratorBase</SubtypeId>
+            </Id>
+            <DisplayName>Small Shield Generator</DisplayName>
+            <Icon>Textures\Icons\Shield.Small_Large_icon.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Shield.Small_Large.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="150" />
+                <Component Subtype="ShieldComponent" Count="10" />
+                <Component Subtype="Construction" Count="500" />
+                <Component Subtype="LargeTube" Count="30" />
+                <Component Subtype="Computer" Count="50" />
+                <Component Subtype="SteelPlate" Count="100" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Shield.Small_Large_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Shield.Small_Large_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>SmallShieldGeneratorBase</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>10</BuildTimeSeconds>
+            <ResourceSinkGroup>Charging</ResourceSinkGroup>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <BlueprintClasses>
+                <Class>EnergyShieldClass</Class>
+            </BlueprintClasses>
+            <RefineSpeed>1</RefineSpeed>
+            <MaterialEfficiency>1</MaterialEfficiency>
+            <PCU>200</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeShipLargeShieldGeneratorBase</SubtypeId>
+            </Id>
+            <DisplayName>Large Shield Generator</DisplayName>
+            <Icon>Textures\Icons\Shield.Large_Large_icon.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="4" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Shield.Large_Large.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="300" />
+                <Component Subtype="ShieldComponent" Count="80" />
+                <Component Subtype="Construction" Count="800" />
+                <Component Subtype="LargeTube" Count="80" />
+                <Component Subtype="Computer" Count="800" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Shield.Large_Large_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Shield.Large_Large_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>LargeShieldGeneratorBase</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>30</BuildTimeSeconds>
+            <ResourceSinkGroup>Charging</ResourceSinkGroup>
+            <PrimarySound>ShieldGenerator</PrimarySound>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <BlueprintClasses>
+                <Class>EnergyShieldClass</Class>
+            </BlueprintClasses>
+            <RefineSpeed>1</RefineSpeed>
+            <MaterialEfficiency>1</MaterialEfficiency>
+            <StandbyPowerConsumption>0.425</StandbyPowerConsumption>
+            <OperationalPowerConsumption>85.0</OperationalPowerConsumption>
+            <PCU>200</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>SmallShipSmallShieldGeneratorBase</SubtypeId>
+            </Id>
+            <DisplayName>Large Shield Generator</DisplayName>
+            <Icon>Textures\Icons\Shield.Large_Small_icon.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="3" z="3" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Shield.Large_Small.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="15" />
+                <Component Subtype="ShieldComponent" Count="25" />
+                <Component Subtype="Construction" Count="25" />
+                <Component Subtype="LargeTube" Count="8" />
+                <Component Subtype="Computer" Count="50" />
+                <Component Subtype="SteelPlate" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Shield.Large_Small_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Shield.Large_Small_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>LargeShieldGeneratorBase</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>10</BuildTimeSeconds>
+            <ResourceSinkGroup>Charging</ResourceSinkGroup>
+            <PrimarySound>ShieldGenerator</PrimarySound>
+            <InventoryMaxVolume>1</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <BlueprintClasses>
+                <Class>EnergyShieldClass</Class>
+            </BlueprintClasses>
+            <RefineSpeed>1</RefineSpeed>
+            <MaterialEfficiency>1</MaterialEfficiency>
+            <StandbyPowerConsumption>0.0225</StandbyPowerConsumption>
+            <OperationalPowerConsumption>4.5</OperationalPowerConsumption>
+            <PCU>200</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>SmallShipMicroShieldGeneratorBase</SubtypeId>
+            </Id>
+            <DisplayName>Small Shield Generator</DisplayName>
+            <Icon>Textures\Icons\Shield.Small_Small_icon.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Shield.Small_Small.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="ShieldComponent" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="LargeTube" Count="1" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Shield.Small_Small_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Shield.Small_Small_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>SmallShieldGeneratorBase</BlockPairName>
+            <ResourceSinkGroup>Charging</ResourceSinkGroup>
+            <PrimarySound>ShieldGenerator</PrimarySound>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>10</BuildTimeSeconds>
+            <InventoryMaxVolume>1</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <BlueprintClasses>
+                <Class>EnergyShieldClass</Class>
+            </BlueprintClasses>
+            <RefineSpeed>1</RefineSpeed>
+            <MaterialEfficiency>1</MaterialEfficiency>
+            <StandbyPowerConsumption>0.0001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.2</OperationalPowerConsumption>
+            <PCU>200</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+            <Id>
+                <TypeId>UpgradeModule</TypeId>
+                <SubtypeId>ShieldCapacitor</SubtypeId>
+            </Id>
+            <DisplayName>Shield Capacitor</DisplayName>
+            <Icon>Textures\Icons\Module.Strength_Large_icon.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Module.Strength_Large.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="ShieldComponent" Count="8" />
+                <Component Subtype="Construction" Count="70" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Computer" Count="100" />
+                <Component Subtype="SteelPlate" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Module.Strength_Large_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Module.Strength_Large_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>ShieldCapacitor</BlockPairName>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <Upgrades>
+                <MyUpgradeModuleInfo>
+                    <UpgradeType>ShieldPoints</UpgradeType>
+                    <Modifier>1.0</Modifier>
+                    <ModifierType>Additive</ModifierType>
+                </MyUpgradeModuleInfo>
+                <MyUpgradeModuleInfo>
+                    <UpgradeType>PowerConsumption</UpgradeType>
+                    <Modifier>1.0</Modifier>
+                    <ModifierType>Additive</ModifierType>
+                </MyUpgradeModuleInfo>
+            </Upgrades>
+            <DamageEffectId>214</DamageEffectId>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>1.0</OperationalPowerConsumption>
+            <PCU>1</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+            <Id>
+                <TypeId>UpgradeModule</TypeId>
+                <SubtypeId>ShieldFluxCoil</SubtypeId>
+            </Id>
+            <DisplayName>Shield Flux Coil</DisplayName>
+            <Icon>Textures\Icons\Module.Recharge_Large_icon.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Module.Recharge_Large.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="ShieldComponent" Count="8" />
+                <Component Subtype="Construction" Count="70" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Computer" Count="100" />
+                <Component Subtype="SteelPlate" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.55" File="Models\Module.Recharge_Large_Constr1.mwm" />
+                <Model BuildPercentUpperBound="1.0" File="Models\Module.Recharge_Large_Constr2.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>ShieldFluxCoil</BlockPairName>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <Upgrades>
+                <MyUpgradeModuleInfo>
+                    <UpgradeType>ShieldRecharge</UpgradeType>
+                    <Modifier>1.0</Modifier>
+                    <ModifierType>Additive</ModifierType>
+                </MyUpgradeModuleInfo>
+                <MyUpgradeModuleInfo>
+                    <UpgradeType>PowerConsumption</UpgradeType>
+                    <Modifier>1.0</Modifier>
+                    <ModifierType>Additive</ModifierType>
+                </MyUpgradeModuleInfo>
+            </Upgrades>
+            <DamageEffectId>214</DamageEffectId>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>1</OperationalPowerConsumption>
+            <PCU>1</PCU>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

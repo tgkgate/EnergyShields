@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <PhysicalItems>
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ore</TypeId>
+                <SubtypeId>ShieldPointOre</SubtypeId>
+            </Id>
+            <DisplayName>Shield Regenerating</DisplayName>
+            <Icon>Textures\Icons\Recharge.dds</Icon>
+            <Size>
+                <X>0.072</X>
+                <Y>0.072</Y>
+                <Z>0.072</Z>
+            </Size>
+            <Mass>0.00001</Mass>
+            <Volume>0.0001</Volume>
+            <Model>Models\Ingots\stone_ingot.mwm</Model>
+        </PhysicalItem>
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>ShieldPointIngot</SubtypeId>
+            </Id>
+            <DisplayName>Shield Regenerating</DisplayName>
+            <Icon>Textures\Icons\Recharge.dds</Icon>
+            <Size>
+                <X>0.072</X>
+                <Y>0.072</Y>
+                <Z>0.072</Z>
+            </Size>
+            <Mass>0.00001</Mass>
+            <Volume>0.0001</Volume>
+            <Model>Models\Ingots\stone_ingot.mwm</Model>
+        </PhysicalItem>
+    </PhysicalItems>
+</Definitions>

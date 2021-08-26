@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>ShieldPoints</SubtypeId>
+            </Id>
+            <DisplayName>ShieldGeneration</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\gravel_ingot.dds</Icon>
+            <Prerequisites>
+                <Item Amount="1" TypeId="Ore" SubtypeId="ShieldPointOre" />
+            </Prerequisites>
+            <Results>
+                <Item Amount="0.1" TypeId="Ingot" SubtypeId="ShieldPointIngot" />
+            </Results>
+            <BaseProductionTimeInSeconds>5.0</BaseProductionTimeInSeconds>
+        </Blueprint>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>ShieldComponentBP</SubtypeId>
+            </Id>
+            <DisplayName>Shield Component</DisplayName>
+            <Icon>Textures\Icons\shieldcomponent.dds</Icon>
+            <Prerequisites>
+                <Item Amount="30" TypeId="Ingot" SubtypeId="Cobalt" />
+                <Item Amount="2.5" TypeId="Ingot" SubtypeId="Silver" />
+                <Item Amount="5.0" TypeId="Ingot" SubtypeId="Gold" />
+                <Item Amount="2.0" TypeId="Ingot" SubtypeId="Platinum" />
+            </Prerequisites>
+            <Results>
+                <Item Amount="1" TypeId="Component" SubtypeId="ShieldComponent" />
+            </Results>
+            <BaseProductionTimeInSeconds>5.0</BaseProductionTimeInSeconds>
+        </Blueprint>
+    </Blueprints>
+</Definitions>
